@@ -39,12 +39,3 @@ services:
       - key: AQI_LIMIT
         value: "300"
     region: oregon
-
-  - type: cron
-    name: ignite-refresh-aqi
-    schedule: "*/15 * * * *"
-    httpMethod: POST
-    target:
-      type: workflow
-      name: ignite-workflows
-      taskName: refresh_aqi
