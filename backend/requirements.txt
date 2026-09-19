@@ -1,6 +1,5 @@
 neo4j==5.24.0
 python-dotenv==1.0.0
 fastapi==0.115.0
-uvicorn==0.30.0
+uvicorn[standard]==0.30.0
 render==1.1.0
-pydantic==2.9.0
